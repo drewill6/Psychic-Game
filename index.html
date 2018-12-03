@@ -5,9 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic-Game</title>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Psychic Game</h1>
+            </div>
+        </div>
+        <div class="row playing">
+            <div class="col-12 text-center">
+                <h3>Guess What Letter I Am Thinkin Of...</h3>
+                <input id="guess" type="text" />
+                <button id="guessBtn">Guess</button>
+            </div>
+        </div>
+        <div class="row reset" style="margin-top: 20px;">
+                <div class="col-12 text-center">
+                    <h5 style="text-decoration: underline; color: red;">Game Over!</h5>
+                    <button id="reset">Reset Game!</button>
+                </div>
+            </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-12 text-center">
+                <h5 style="text-decoration: underline;">Letters Guessed So Far</h5>
+                <h5 id="guesses" style="color: red;">No guesses</h5>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-12 text-center">
+                <div class="score">
+                    <h1 id="wins">0</h1>
+                    <h6>Wins</h6>
+                </div>
+                <div class="score">
+                    <h1 id="losses">0</h1>
+                    <h6>Loses</h6>
+                </div>
+                <div class="score">
+                    <h1 id="triesLeft">0</h1>
+                    <h6>Tries Left</h6>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
